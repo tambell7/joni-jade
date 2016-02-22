@@ -1,0 +1,329 @@
+/* Generics styles*/
+
+.wrapper {
+  width: auto;
+  margin: 0 auto;
+  height: auto;
+  /*background-color: green;*/
+}
+
+.wrapper-about {
+  padding: 0px 30px;
+
+}
+
+body {
+  font-family: 'Raleway', 'Gill Sans', 'sans-serif';
+  color: black;
+}
+
+header {
+  height: 75px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 90;
+}
+
+/* homeapage*/
+
+li {
+list-style-type: none;
+display: inline;
+}
+
+.section-links, .nav-social {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 15px;
+  padding-top: 5px;
+  background: 1px solid;
+}
+
+.section-links {
+  margin-top: 20px;
+  padding-right: 10px;
+}
+
+/*creates spacing between li in nav bar */
+.section-links li {
+  padding-right: 10px;
+}
+
+.nav-social {
+  float: right;
+  padding-right: 10px;
+  margin-top: 20px;
+}
+
+.nav-logo {
+  position: absolute;
+  left: 50%;
+}
+
+
+a {
+  color: black;
+}
+
+/* Footer */
+.site-footer {
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: black;
+  padding-bottom: 25px;
+  clear: both;
+}
+
+.contact {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px; 0px;
+}
+
+i {
+  margin-right: 20px;
+  display: ;
+}
+
+main {
+  padding-top: 75px;
+  height: 980px;
+  background-color: white;
+}
+
+.nav-logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  transform: translateX(-50%);
+}
+
+.container--slim {
+    padding: 5px;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+    list-style: none;
+}
+/* Image Grid  */
+
+.block-imagery {
+  margin-top: -10px;
+}
+
+.grid__cell {
+    position: relative;
+    float: left;
+    display: inline;
+    width: 100%;
+    min-height: 1px;
+  }
+
+  .work  {
+    width: 50%;
+  }
+
+ul.grid.block-imagery {
+  padding: 0px;
+  margin-top: -10px;
+}
+
+.block-imagery {
+    margin-top: -10px;
+    margin-left: -5px;
+}
+
+.block-imagery .work {
+  padding: 5px;
+}
+
+.work .image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: transform .3s ease;
+    backface-visibility: hidden;
+}
+
+.work .content {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+    transition-delay: 0.3s;
+  }
+
+  hr {
+    height:auto;
+    width: 50px;
+    border-bottom: 1px solid white;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font: 'Raleway-light', 'sans-serif';
+    letter-spacing: 2px;
+  }
+
+   /* Fade */
+  .work a:hover .content{
+    opacity: 1;
+  }
+
+.work .content-inner {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+.work a:hover img{
+  transform: scale(1.05);
+}
+
+.work .fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.work a:hover .fade{
+  opacity: 0.75;
+}
+
+.work a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-top: 66.66667%;
+    overflow: hidden;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    /*transform-style: preserve-3d;*/
+}
+
+.work a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-top: 66.66667%;
+    overflow: hidden;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    /*backface-visibility: hidden;
+    transform-style: preserve-3d;*/
+}
+
+  /* About page */
+
+h1, p, li h3 {
+  text-align: center;
+  padding: 15px 0;
+}
+
+img.about_img {
+  width: 100%;
+}
+
+ul.process-list {
+  margin: 0 auto;
+  /*width: 25%;*/
+}
+
+.process-list li {
+  margin: 0 auto;
+  max-width: 20%;
+  display: inline-block;
+  text-align: center;
+  padding: 0 10px;
+}
+
+
+/* Client List */
+
+.client-list.client {
+  float: left;
+}
+
+
+.column {
+  width: 80%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+ul.client-list {
+  margin-top: 25px;
+}
+
+li.client {
+  height: 100px;
+}
+
+.client-list {
+    zoom: 1;
+    position: relative;
+    list-style: none;
+    margin: 15px 0;
+}
+
+.client-list .client {
+    float: left;
+    width: 25%;
+}
+
+.showing {
+  position: absolute;
+  width: 100%;
+  display: block;
+  background-color: white;
+  border: 1px solid;
+  left: 0;
+  top: 0;
+  z-index: 20000;
+}
+
+
+.showing .testimonial-close {
+  display: block;
+}
+
+.testimonial-close {
+  display: none;
+}
+
+.logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 200px;
+}
+
+img .logo {
+  height: auto;
+  padding: 30px 0;
+}
